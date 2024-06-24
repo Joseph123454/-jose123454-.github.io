@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecciona tu idioma</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    .button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1></h1>
+    <button class="button" onclick="showMessage('english')">English</button>
+    <button class="button" onclick="showMessage('spanish')">Español</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage(language) {
+      var message = document.getElementById('message');
+      if (language === 'english') {
+        message.textContent = 'Whoever moves first is gay.';
+      } else if (language === 'spanish') {
+        message.textContent = 'El que se mueva es gay.';
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
